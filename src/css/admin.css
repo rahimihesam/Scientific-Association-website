@@ -106,3 +106,7 @@
     display: flex;
     gap: 10px;
 }
+
+/*Inputs*/
+input:disabled {
+    cursor: not-allowed !important;}
