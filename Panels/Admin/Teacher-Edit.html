@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی-ویرایش استاد</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./A-Teachers.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Students.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دانشجویان
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Teachers.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            استادان
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Admins.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            ادمین ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Offline-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10 offset-md-2 p-4">
+        <h3 class="text-primary">ویرایش استاد</h3>
+
+        <!-- Alerts-->
+        <div>
+            <!--        <div id="myAlert" class="alert alert-danger alert-dismissible fixed-top mt-1 fade show" role="alert">-->
+            <!--            <strong>شماره تلفن</strong>-->
+            <!--            تکراری است.-->
+            <!--            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+            <!--        </div>-->
+            <!--        <div id="myAlert" class="alert alert-danger alert-dismissible fixed-top mt-1 fade show" role="alert">-->
+            <!--            <strong>ایمیل</strong>-->
+            <!--            تکراری است.-->
+            <!--            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+            <!--        </div>-->
+        </div>
+
+        <!-- Main Content -->
+        <div class="container my-5">
+            <form>
+                <form class="form-control">
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <label class="form-label" for="name">نام و نام خانوادگی</label>
+                            <input class="C-input text-start" id="name" name="name" type="text"
+                                   placeholder="ممد جعفرزاده" required>
+                        </div>
+                        <div class=" col-md-6">
+                            <label class="form-label" for="tel">شماره تلفن</label>
+                            <input class="C-input" id="tel" name="tel" type="tel" placeholder="09123456789" required>
+                        </div>
+                        <div class=" col-md-6 mt-3">
+                            <label class="form-label" for="email">ایمیل</label>
+                            <input class="C-input" id="email" name="email" type="email" placeholder="example@email.com"
+                                   required>
+                        </div>
+                        <div class=" col-md-6 mt-3">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-label" for="password">رمز عبور</label>
+                                <div>
+                                    <label class="form-label" for="toggle-admin-view">نمایش رمز</label>
+                                    <input class="form-check-input" type="checkbox" name="Show-pass"
+                                           id="toggle-admin-view">
+                                </div>
+                            </div>
+                            <input class="C-input text-end" id="password" name="password" type="password"
+                                   placeholder="Aa-Zz,1-9"
+                                   oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g, '')" required>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary d-block w-100 mt-4">ثبت تغییرات</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
