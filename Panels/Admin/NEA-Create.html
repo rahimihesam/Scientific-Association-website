@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی-افزودن اعلان ها</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./A-NEA.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Students.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دانشجویان
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Teachers.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            اساتید
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Admins.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            ادمین ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Offline-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-Notifs.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 borde w-100">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./A-NEA.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            اخبار/رویداد/اطلاعیه
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alerts-->
+    <div>
+        <!-- Change -->
+        <!--                <div id="myAlert" class="alert alert-info alert-dismissible fixed-top w-25 m-3 fade show" role="alert">-->
+        <!--                                      اعلان-->
+        <!--                                    با موفقیت ویرایش شد.-->
+        <!--                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+        <!--                </div>-->
+
+        <!-- Successful -->
+        <!--                                <div id="myAlert" class="alert alert-success alert-dismissible fixed-top w-25 m-3 fade show" role="alert">-->
+        <!--                                      اعلان-->
+        <!--                                    با موفقیت ارسال شد.-->
+        <!--                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+        <!--                                </div>-->
+
+        <!-- Delete -->
+        <!--                        <div id="myAlert" class="alert alert-danger alert-dismissible fixed-top w-25 m-3 fade show" role="alert">-->
+        <!--                                      اعلان-->
+        <!--                                    با موفقیت حذف شد.-->
+        <!--                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+        <!--                        </div>-->
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <form class="form-control">
+            <label class="form-label" for="title">عنوان</label>
+            <input class="C-input" id="title" name="title" type="text" placeholder="عنوان مورد نظر" required>
+            <label for="text" class="form-label">متن</label>
+            <input class="C-input" id="text" name="text" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label">دسته بندی</label>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                <label class="form-check-label" for="Events">
+                    رویداد
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="News" >
+                <label class="form-check-label" for="News">
+                    خبر
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Announcements" checked>
+                <label class="form-check-label" for="Announcements">
+                    اطلاعیه
+                </label>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary w-100 mt-4" id="submitBtn">
+                انتشار
+            </button>
+        </form>
+    </div>
+
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
