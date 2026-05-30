@@ -76,6 +76,7 @@
             </div>
         </div>
     </div>
+
     <!-- Main Content -->
     <div class="col-md-10 offset-md-2 p-4">
         <div class="container my-5">
@@ -105,17 +106,60 @@
                                placeholder="مثلاً 20 ساعت یا 10 جلسه">
                     </div>
                 </div>
-                <!-- مدرس و تصویر -->
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="instructor">مدرس</label>
-                        <select class="C-select" id="instructor" name="instructorId" required>
-                            <option value="">انتخاب کنید...</option>
-                            <option value="1">حسام جعفری</option>
-                            <option value="2">دکتر رضایی</option>
-                            <option value="3">مهندس کریمی</option>
-                        </select>
+                <!-- Number-of-Student -->
+                <label class="">تعداد دانشجو</label>
+                <div class="d-flex">
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            10
+                        </label>
                     </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            20
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            30
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            40
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            50
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            100
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            200
+                        </label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
+                        <label class="form-check-label" for="Events">
+                            300
+                        </label>
+                    </div>
+                </div>
+                <!--   تصویر -->
+                <div class="form-row">
                     <div class="form-group">
                         <label for="image">عکس دوره</label>
                         <input class="C-input" id="image" name="image" type="file" accept="image/*">
@@ -131,7 +175,8 @@
                 <!-- معرفی -->
                 <div class="form-group">
                     <label for="description">معرفی و توضیحات دوره</label>
-                    <textarea class="C-textarea" id="description" name="description" placeholder="توضیح کلی درباره دوره، اهداف، مخاطبین و..."></textarea>
+                    <textarea class="C-textarea" id="description" name="description"
+                              placeholder="توضیح کلی درباره دوره، اهداف، مخاطبین و..."></textarea>
                 </div>
                 <!-- پیش‌نیازها -->
                 <div class="form-group">
