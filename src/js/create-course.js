@@ -81,6 +81,7 @@ function addSection(
   data = {
     title: "",
     description: "",
+    download_link:""
   },
 ) {
   sectionCounter++;
@@ -102,6 +103,10 @@ function addSection(
         <div class="form-group">
             <label>توضیح سرفصل</label>
             <textarea class="js-section-desc C-textarea" placeholder="در این بخش چه چیزهایی آموزش داده می‌شود؟">${data.description}</textarea>
+        </div>
+        <div class="form-group">
+            <label>لینک ویدیو</label>
+            <input class="C-input" placeholder="لینک دریافتی خود از سایت هاست دانلودی خود را اینجا جایگزاری کنید.">${data.download_link}</input>
         </div>
     `;
 
