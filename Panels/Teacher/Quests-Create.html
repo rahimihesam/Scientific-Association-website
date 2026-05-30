@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی- سوالات امتحانی</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./T-Quests.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Offline-Courses.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Quests.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            امتحانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-NEA.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100">
+                            اخبار/رویداد/اطلاعیه
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <h3 class="text-primary">طراحی سوالات امتحانی</h3>
+        <!-- سؤال 1 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال اول</p>
+            <label class="form-label" for="Question1">سوال</label>
+            <input class="C-input" id="Question1" name="Question1" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_1" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_1" name="A1_1" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_1" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_1" name="A2_1" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_1" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_1" name="A3_1" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_1" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_1" name="A4_1" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="CurrentAnswer1_1"><label class="form-check-label" for="CurrentAnswer1_1">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="CurrentAnswer2_1"><label class="form-check-label" for="CurrentAnswer2_1">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="CurrentAnswer3_1"><label class="form-check-label" for="CurrentAnswer3_1">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="CurrentAnswer4_1"><label class="form-check-label" for="CurrentAnswer4_1">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 2 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال دوم</p>
+            <label class="form-label" for="Question2">سوال</label>
+            <input class="C-input" id="Question2" name="Question2" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_2" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_2" name="A1_2" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_2" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_2" name="A2_2" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_2" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_2" name="A3_2" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_2" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_2" name="A4_2" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="CurrentAnswer1_2"><label class="form-check-label" for="CurrentAnswer1_2">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="CurrentAnswer2_2"><label class="form-check-label" for="CurrentAnswer2_2">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="CurrentAnswer3_2"><label class="form-check-label" for="CurrentAnswer3_2">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="CurrentAnswer4_2"><label class="form-check-label" for="CurrentAnswer4_2">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 3 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال سوم</p>
+            <label class="form-label" for="Question3">سوال</label>
+            <input class="C-input" id="Question3" name="Question3" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_3" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_3" name="A1_3" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_3" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_3" name="A2_3" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_3" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_3" name="A3_3" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_3" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_3" name="A4_3" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="CurrentAnswer1_3"><label class="form-check-label" for="CurrentAnswer1_3">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="CurrentAnswer2_3"><label class="form-check-label" for="CurrentAnswer2_3">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="CurrentAnswer3_3"><label class="form-check-label" for="CurrentAnswer3_3">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="CurrentAnswer4_3"><label class="form-check-label" for="CurrentAnswer4_3">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 4 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال چهارم</p>
+            <label class="form-label" for="Question4">سوال</label>
+            <input class="C-input" id="Question4" name="Question4" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_4" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_4" name="A1_4" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_4" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_4" name="A2_4" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_4" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_4" name="A3_4" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_4" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_4" name="A4_4" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="CurrentAnswer1_4"><label class="form-check-label" for="CurrentAnswer1_4">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="CurrentAnswer2_4"><label class="form-check-label" for="CurrentAnswer2_4">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="CurrentAnswer3_4"><label class="form-check-label" for="CurrentAnswer3_4">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="CurrentAnswer4_4"><label class="form-check-label" for="CurrentAnswer4_4">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 5 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال پنجم</p>
+            <label class="form-label" for="Question5">سوال</label>
+            <input class="C-input" id="Question5" name="Question5" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_5" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_5" name="A1_5" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_5" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_5" name="A2_5" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_5" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_5" name="A3_5" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_5" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_5" name="A4_5" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault5" id="CurrentAnswer1_5"><label class="form-check-label" for="CurrentAnswer1_5">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault5" id="CurrentAnswer2_5"><label class="form-check-label" for="CurrentAnswer2_5">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault5" id="CurrentAnswer3_5"><label class="form-check-label" for="CurrentAnswer3_5">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault5" id="CurrentAnswer4_5"><label class="form-check-label" for="CurrentAnswer4_5">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 6 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال ششم</p>
+            <label class="form-label" for="Question6">سوال</label>
+            <input class="C-input" id="Question6" name="Question6" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_6" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_6" name="A1_6" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_6" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_6" name="A2_6" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_6" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_6" name="A3_6" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_6" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_6" name="A4_6" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="CurrentAnswer1_6"><label class="form-check-label" for="CurrentAnswer1_6">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="CurrentAnswer2_6"><label class="form-check-label" for="CurrentAnswer2_6">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="CurrentAnswer3_6"><label class="form-check-label" for="CurrentAnswer3_6">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault6" id="CurrentAnswer4_6"><label class="form-check-label" for="CurrentAnswer4_6">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 7 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال هفتم</p>
+            <label class="form-label" for="Question7">سوال</label>
+            <input class="C-input" id="Question7" name="Question7" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_7" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_7" name="A1_7" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_7" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_7" name="A2_7" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_7" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_7" name="A3_7" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_7" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_7" name="A4_7" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="CurrentAnswer1_7"><label class="form-check-label" for="CurrentAnswer1_7">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="CurrentAnswer2_7"><label class="form-check-label" for="CurrentAnswer2_7">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="CurrentAnswer3_7"><label class="form-check-label" for="CurrentAnswer3_7">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault7" id="CurrentAnswer4_7"><label class="form-check-label" for="CurrentAnswer4_7">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 8 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال هشتم</p>
+            <label class="form-label" for="Question8">سوال</label>
+            <input class="C-input" id="Question8" name="Question8" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_8" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_8" name="A1_8" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_8" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_8" name="A2_8" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_8" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_8" name="A3_8" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_8" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_8" name="A4_8" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="CurrentAnswer1_8"><label class="form-check-label" for="CurrentAnswer1_8">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="CurrentAnswer2_8"><label class="form-check-label" for="CurrentAnswer2_8">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="CurrentAnswer3_8"><label class="form-check-label" for="CurrentAnswer3_8">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault8" id="CurrentAnswer4_8"><label class="form-check-label" for="CurrentAnswer4_8">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 9 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال نهم</p>
+            <label class="form-label" for="Question9">سوال</label>
+            <input class="C-input" id="Question9" name="Question9" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_9" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_9" name="A1_9" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_9" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_9" name="A2_9" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_9" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_9" name="A3_9" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_9" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_9" name="A4_9" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="CurrentAnswer1_9"><label class="form-check-label" for="CurrentAnswer1_9">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="CurrentAnswer2_9"><label class="form-check-label" for="CurrentAnswer2_9">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="CurrentAnswer3_9"><label class="form-check-label" for="CurrentAnswer3_9">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault9" id="CurrentAnswer4_9"><label class="form-check-label" for="CurrentAnswer4_9">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <!-- سؤال 10 -->
+        <form class="form-control mt-2">
+            <p class="text-center h3 m-2">سوال دهم</p>
+            <label class="form-label" for="Question10">سوال</label>
+            <input class="C-input" id="Question10" name="Question10" type="text" placeholder="سوال مورد نظر" required>
+            <label for="A1_10" class="form-label">متن گزینه اول</label>
+            <input class="C-input" id="A1_10" name="A1_10" type="text" placeholder="متن مورد نظر" required>
+            <label for="A2_10" class="form-label">متن گزینه دوم</label>
+            <input class="C-input" id="A2_10" name="A2_10" type="text" placeholder="متن مورد نظر" required>
+            <label for="A3_10" class="form-label">متن گزینه سوم</label>
+            <input class="C-input" id="A3_10" name="A3_10" type="text" placeholder="متن مورد نظر" required>
+            <label for="A4_10" class="form-label">متن گزینه چهارم</label>
+            <input class="C-input" id="A4_10" name="A4_10" type="text" placeholder="متن مورد نظر" required>
+            <label class="form-label mt-2">جواب درست در کدام گزینه است؟</label>
+            <div class="d-flex">
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="CurrentAnswer1_10"><label class="form-check-label" for="CurrentAnswer1_10">گزینه اول</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="CurrentAnswer2_10"><label class="form-check-label" for="CurrentAnswer2_10">گزینه دوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="CurrentAnswer3_10"><label class="form-check-label" for="CurrentAnswer3_10">گزینه سوم</label></div>
+                <div class="form-check m-2"><input class="form-check-input" type="radio" name="flexRadioDefault10" id="CurrentAnswer4_10"><label class="form-check-label" for="CurrentAnswer4_10">گزینه چهارم</label></div>
+            </div>
+        </form>
+
+        <button type="submit" class="btn btn-primary w-100 mt-4" id="submitBtn">
+            انتشار
+        </button>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
