@@ -121,25 +121,35 @@
             <input class="C-input" id="title" name="title" type="text" placeholder="عنوان مورد نظر" required>
             <label for="text" class="form-label">متن</label>
             <input class="C-input" id="text" name="text" type="text" placeholder="متن مورد نظر" required>
-            <label class="form-label">دسته بندی</label>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">
-                <label class="form-check-label" for="Events">
-                    رویداد
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="News" >
-                <label class="form-check-label" for="News">
-                    خبر
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Announcements" checked>
-                <label class="form-check-label" for="Announcements">
-                    اطلاعیه
-                </label>
+            <!--            <label class="form-label">دسته بندی</label>-->
+            <!--            <div class="form-check">-->
+            <!--                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Events">-->
+            <!--                <label class="form-check-label" for="Events">-->
+            <!--                    رویداد-->
+            <!--                </label>-->
+            <!--            </div>-->
+            <!--            <div class="form-check">-->
+            <!--                <input class="form-check-input" type="radio" name="flexRadioDefault" id="News" >-->
+            <!--                <label class="form-check-label" for="News">-->
+            <!--                    خبر-->
+            <!--                </label>-->
+            <!--            </div>-->
+            <!--            <div class="form-check">-->
+            <!--                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Announcements" checked>-->
+            <!--                <label class="form-check-label" for="Announcements">-->
+            <!--                    اطلاعیه-->
+            <!--                </label>-->
+            <!--            </div>-->
+
+            <div class="form-group">
+                <label for="category">دسته بندی</label>
+                <select class="C-select" id="category" name="category" required>
+                    <option value="">انتخاب کنید...</option>
+                    <option value="network">رویداد</option>
+                    <option value="web">خبر</option>
+                    <option value="ai">اطلاعیه</option>
+                </select>
             </div>
 
 
