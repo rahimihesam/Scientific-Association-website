@@ -100,10 +100,13 @@
             <input class="C-input" id="lesson" name="lesson" type="text" placeholder="نام درس" required>
             <label class="form-label" for="Teacher">مدرس</label>
             <input class="C-input" id="Teacher" name="Teacher" type="text" placeholder="نام مدرس" required>
-            <label class="form-label" for="money">هزینه</label>
-            <input class="C-input" id="money" name="money" type="text" placeholder="هزینه مورد نیاز" required>
+            <div class="form-group">
+                <label for="price">هزینه (تومان)</label>
+                <input class="C-input" id="price" name="price" type="number" min="0" step="1000" placeholder="رایگان" disabled>
+<!--                <small class="C-small">اگر 0 وارد کنید، دوره رایگان در نظر گرفته می‌شود.</small>-->
+            </div>
             <button type="submit" class="btn btn-primary w-100 mt-4" id="submitBtn">
-                ثبت‌
+                ثبت
             </button>
         </form>
     </div>
@@ -113,5 +116,6 @@
 <script src="../../src/js/bootstrap.bundle.min.js"></script>
 <script src="../../src/js/admin.js"></script>
 <script src="../../src/js/script.js"></script>
+<script src="../../src/js/create-course.js"></script>
 </body>
 </html>
