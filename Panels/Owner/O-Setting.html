@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="O-Dashboard.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Admins.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مدیران شبکه
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Students.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دانشجویان
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Teachers.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            اساتید
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Offline-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="O-NEA.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            اخبار/رویداد/اطلاعیه
+                        </a>
+                    </li>
+                    <li>
+                        <a href="O-Analytics.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100">
+                            آمار
+                        </a>
+                    </li>
+                    <li>
+                        <a href="O-Setting.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            تنظیمات سیستم
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alerts-->
+    <div>
+        <!-- Alert for Success -->
+        <!--        <div id="myAlert" class="alert alert-success alert-dismissible fade show m-3" role="alert">-->
+        <!--            تنظیمات بخش-->
+        <!--            <strong>میرجانی</strong>-->
+        <!--            تغییر کرد.-->
+        <!--            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+        <!--        </div>-->
+
+        <!-- Alert for Error -->
+        <!--                <div id="myAlert" class="alert alert-danger alert-dismissible fade show m-3" role="alert">-->
+        <!--                     مشکلی در تغییر تنظیمات بخش-->
+        <!--                    <strong>میرجانی</strong>-->
+        <!--                    بوجود آمده.-->
+        <!--                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+        <!--                </div>-->
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <h3 class="text-primary">تنظیمات سیستم</h3>
+
+        <!--    Name    -->
+        <form id="rename-site" class="mt-2">
+            <label for="rename" class="form-label">نام سایت</label>
+            <input
+                    type="text"
+                    class="form-control rounded-end-2"
+                    id="rename"
+                    placeholder="نام مورد نظر خود را برای تغییر وارد کنید"
+                    required
+                    minlength="3"
+            >
+            <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+            <div class="invalid-feedback">نام باید حداقل ۳ کاراکتر باشد.</div>
+            <button type="submit" class="btn btn-primary w-100 mt-4" id="rename-submitBtn">
+                ثبت‌ تغییرات
+            </button>
+        </form>
+        <hr>
+        <!--   Image     -->
+        <form id="img-site" class="mt-2">
+            <label for="img-site" class="form-label">عکس سایت</label>
+            <input
+                    type="file"
+                    class="form-control rounded-end-2"
+                    id="img"
+                    placeholder="عکس مورد نظر خود را برای تغییر وارد کنید"
+                    required
+                    minlength="3"
+            >
+            <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+            <button type="submit" class="btn btn-primary w-100 mt-4" id="img-submitBtn">
+                ثبت‌ تغییرات
+            </button>
+        </form>
+        <hr>
+        <!--   Contact Us     -->
+        <form id="contactus-site" class="mt-2">
+            <div class="row">
+                <div class=" col-md-6 col-sm-12 mt-2">
+                    <label for="contactus-site-phone" class="form-label">اطلاعات تماس</label>
+                    <input
+                            type="number"
+                            class="form-control rounded-end-2"
+                            id="contactus-site-phone"
+                            placeholder="شماره مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+                <div class=" col-md-6 col-sm-12 mt-2">
+                    <label for="contactus-site-email" class="form-label">اطلاعات ایمیل</label>
+                    <input
+                            type="email"
+                            class="form-control rounded-end-2"
+                            id="contactus-site-email"
+                            placeholder="ایمیل مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+                <div class=" col-md-12 col-sm-12 mt-2">
+                    <label for="contactus-site-address" class="form-label">اطلاعات آدرس</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="contactus-site-address"
+                            placeholder="آدرس مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-4" id="contactus-submitBtn">
+                ثبت‌ تغییرات
+            </button>
+        </form>
+        <hr>
+        <!--     Social Medias   -->
+        <form id="social-medias-site" class="mt-2">
+            <div class="row">
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <label for="social-medias-name-1" class="form-label">نام شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-name-1"
+                            placeholder="نام مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <label for="social-medias-link-1" class="form-label">لینک شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-link-1"
+                            placeholder="لینک مورد نظر خود را وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <label for="social-medias-name-2" class="form-label">نام شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-name-2"
+                            placeholder="نام مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <label for="social-medias-link-2" class="form-label">لینک شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-link-2"
+                            placeholder="لینک مورد نظر خود را وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <label for="social-medias-name-3" class="form-label">نام شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-name-3"
+                            placeholder="نام مورد نظر خود را برای تغییر وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <label for="social-medias-link-3" class="form-label">لینک شبکه اجتماعی</label>
+                    <input
+                            type="text"
+                            class="form-control rounded-end-2"
+                            id="social-medias-link-3"
+                            placeholder="لینک مورد نظر خود را وارد کنید"
+                            required
+                            minlength="3"
+                    >
+                    <small class="C-small">اگر قصد تغییر ندارید، ورودی را خالی بگزارید.</small>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mt-4" id="social-medias-submitBtn">
+                ثبت‌ تغییرات
+            </button>
+        </form>
+
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+<script src="../../src/js/dashboard-profile.js"></script>
+</body>
+</html>
