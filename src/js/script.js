@@ -38,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// Loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-wrapper");
+
+  loader.style.opacity = "0";
+  loader.style.transition = "opacity .4s";
+
+  setTimeout(() => {
+    loader.remove();
+  }, 400);
+});
