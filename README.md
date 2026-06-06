@@ -12,7 +12,7 @@
 
 ## 📝 Description
 
-A site for sientific perpeses. Created for Kharazmi universe(Isfahan-Shareza)
+A site for scientific perspectives. Created for Kharazmi universe(Isfahan-Shareza)
 
 ## ⚡ Quick Start
 
@@ -173,11 +173,4 @@ Contributions are welcome! Here's the standard flow:
 5. **Push**: `git push origin feature/your-feature`
 6. **Open** a pull request
 
-Please follow the existing code style and include tests for new behavior where applicable.
-
-## 📜 License
-
-This project is licensed under the **LICENSE** License.
-
----
-*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
+Please follow the existing code style and include tests for new behaviour where applicable.
