@@ -66,9 +66,9 @@
                     >گواهینامه ها</a
                     >
                 </li>
-                <li class="nav-item">
-                    <a href="cult.html" class="nav-link custom-a">انجمن</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a href="cult.html" class="nav-link custom-a">انجمن</a>-->
+<!--                </li>-->
                 <li class="nav-item">
                     <a href="contactus.html" class="nav-link custom-a"
                     >ارتباط با ما</a
@@ -81,19 +81,22 @@
             </ul>
 
             <!-- Search Bar -->
-            <form class="d-flex mx-auto my-3 my-xxl-0 search-box" role="search">
-                <input
-                        class="form-control rounded-start-4 rounded-end-0"
-                        type="search"
-                        placeholder="جستجو..."
-                />
-                <button
-                        class="btn btn-primary rounded-end-4 rounded-start-0"
-                        type="submit"
-                >
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
+            <div class="live-search-container">
+                <form class="d-flex mx-auto my-3 my-xxl-0 search-box" action="/search" method="GET" role="search">
+                    <input
+                            class="form-control rounded-start-4 rounded-end-0"
+                            type="search"
+                            name="q"
+                            id="search-input-live"
+                            autocomplete="off"
+                            placeholder="جستجو..."
+                            value=""/>
+                    <button class="btn btn-primary rounded-end-4 rounded-start-0" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div id="live-results"></div>
+            </div>
 
             <!-- Login Buttons -->
             <a
@@ -329,18 +332,15 @@
                 <a
                         class="d-block link-primary text-decoration-none text-white"
                         href="#"
-                >اینستاگرام <i class="fa fa-instagram"></i></a
-                >
+                >اینستاگرام</a>
                 <a
                         class="d-block link-primary text-decoration-none text-white"
                         href="#"
-                >تلگرام<i class="fa fa-telegram"></i></a
-                >
+                >تلگرام</a>
                 <a
                         class="d-block link-primary text-decoration-none text-white"
                         href="#"
-                >گیت‌هاب انجمن<i class="fa fa-github"></i></a
-                >
+                >گیت‌هاب انجمن</a>
             </div>
         </div>
     </div>
